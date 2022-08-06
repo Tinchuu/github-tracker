@@ -17,6 +17,17 @@
   min-height: 100vh;
 }
 
+.search-menu {
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 30vh;
+  background-color: aliceblue;
+  height: 40%;
+}
+
 .result {
   align-items: center;
   text-align: center;
@@ -34,9 +45,6 @@
 .main {
   position: sticky;
   background-image: url(./media/git-desktop-background.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   height: 100%;
   overflow: hidden;

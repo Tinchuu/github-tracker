@@ -9,12 +9,14 @@ function Search() {
     const [githubName, setGithubName] = useState("");
     const [githubInfo, setGithubInfo] = useState<undefined | any>(undefined);
 
+    
+
     const GITHUB_BASE_URL = "https://api.github.com";
 
     return (
         <div className="search">
           
-          <Box sx={{width: 600, height:700, backgroundColor: "text.main"}}>
+          <div className="search-menu">
             <TextField
               id="search-bar"
               className="text"
@@ -60,7 +62,9 @@ function Search() {
                   </Box>
                 </div>
               )}
-          </Box>
+
+
+          </div>
       </div>
   );   
 
