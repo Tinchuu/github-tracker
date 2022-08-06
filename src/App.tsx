@@ -1,5 +1,4 @@
 
-import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from 'react';
 import './App.css';
 import Searchbar from './Components/Searchbar';
 

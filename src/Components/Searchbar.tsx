@@ -4,7 +4,6 @@ import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import Box from '@mui/material/Box';
-import { time } from 'console';
 
 function Search() {
     const [githubName, setGithubName] = useState("");
@@ -41,25 +40,25 @@ function Search() {
                 <p>Github not found</p>
               ) : (
                 <div id="Github-result">
-                  <Box className= "content-top" component="span" sx={{height:40, display: 'block'}}>
-                    <a href={githubInfo.html_url} target="_blank">{githubName}</a>
+                  <Box className= "content-top" component="span" sx={{height:60, display: 'block'}}>
+                    <a href={githubInfo.html_url} target="_blank">{githubInfo.login}</a>
                   </Box>
-                  <Box className= "content" component="span" sx={{height:200, display: 'block'}}>
+                  <Box className= "content" component="span" sx={{height:220, display: 'block'}}>
                     <img className="profile" src={githubInfo.avatar_url} />
                   </Box>
-                  <Box className= "content" component="span" sx={{height:20, display: 'block'}}>
+                  <Box className= "content" component="span" sx={{height:30, display: 'block'}}>
                     Github id: {githubInfo.id}
                   </Box>
-                  <Box className= "content" component="span" sx={{height:20, display: 'block'}}>
+                  <Box className= "content" component="span" sx={{height:30, display: 'block'}}>
                     Public Repos: {githubInfo.public_repos}
                   </Box>
-                  <Box className= "content" component="span" sx={{height:20, display: 'block'}}>
+                  <Box className= "content" component="span" sx={{height:30, display: 'block'}}>
                     Following: {githubInfo.following}
                   </Box>
-                  <Box className= "content" component="span" sx={{height:20, display: 'block'}}>
+                  <Box className= "content" component="span" sx={{height:30, display: 'block'}}>
                     Followers: {githubInfo.followers}
                   </Box>
-                  <Box className= "content" component="span" sx={{height:20, display: 'block'}} >
+                  <Box className= "content" component="span" sx={{height:30, display: 'block'}} >
                     Created: {githubInfo.created_at}
                   </Box>
                 </div>
