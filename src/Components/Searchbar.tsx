@@ -3,8 +3,6 @@ import { useState } from 'react';
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
-import Popper from '@mui/material/Popper';
-import Fade from '@mui/material/Fade';
 import Box from '@mui/material/Box';
 
 function Search() {
@@ -50,6 +48,12 @@ function Search() {
                   </Box>
                   <Box component="span" sx={{height:20, display: 'block'}}>
                     Public Repos: {githubInfo.public_repos}
+                  </Box>
+                  <Box component="span" sx={{height:20, display: 'block'}}>
+                    Following: {githubInfo.following}
+                  </Box>
+                  <Box component="span" sx={{height:20, display: 'block'}}>
+                    Followers: {githubInfo.followers}
                   </Box>
                   <Box component="span" sx={{height:20, display: 'block'}}>
                     Created: {githubInfo.created_at}
