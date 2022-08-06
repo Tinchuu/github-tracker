@@ -18,14 +18,10 @@
 }
 
 .search-menu {
-  padding: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 30vh;
-  background-color: aliceblue;
-  height: 40%;
+  color:rgb(189, 28, 28);
+  justify-content: left;
+  align-items: left;
+  text-align: left;
 }
 
 .result {
@@ -33,11 +29,17 @@
   text-align: center;
 }
 
+.content-top {
+  color: blue;
+  font-size: x-large;
+  text-align: left;
+}
+
 .content {
   justify-content: left;
   align-items: left;
   text-align: left;
-  color: rgb(59, 82, 82);
+  color: rgb(60, 128, 128);
 }
 
 .profile {

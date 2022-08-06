@@ -41,6 +41,9 @@ function Search() {
                 <p>Github not found</p>
               ) : (
                 <div id="Github-result">
+                  <Box className= "content-top" component="span" sx={{height:40, display: 'block'}}>
+                    <a href={githubInfo.html_url} target="_blank">{githubName}</a>
+                  </Box>
                   <Box className= "content" component="span" sx={{height:200, display: 'block'}}>
                     <img className="profile" src={githubInfo.avatar_url} />
                   </Box>
