@@ -17,3 +17,27 @@ code {
   --border: 1px solid black;
   --border-radius: 8px;
 }
+
+.ul {
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.navbar {
+  height: var(--nav--size) * 0.5;
+  background-color: aqua;
+  border-bottom: var(--border) * 0.5;
+}
+
+.navbar-nav {
+  max-width: 50%;
+  height: 50%;
+  display: center;
+  justify-content: center;
+}

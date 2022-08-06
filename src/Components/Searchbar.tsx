@@ -4,12 +4,11 @@ import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import Box from '@mui/material/Box';
+import { time } from 'console';
 
 function Search() {
     const [githubName, setGithubName] = useState("");
     const [githubInfo, setGithubInfo] = useState<undefined | any>(undefined);
-
-    
 
     const GITHUB_BASE_URL = "https://api.github.com";
 
@@ -42,22 +41,22 @@ function Search() {
                 <p>Github not found</p>
               ) : (
                 <div id="Github-result">
-                  <Box component="span" sx={{height:200, display: 'block'}}>
+                  <Box className= "content" component="span" sx={{height:200, display: 'block'}}>
                     <img className="profile" src={githubInfo.avatar_url} />
                   </Box>
-                  <Box component="span" sx={{height:20, display: 'block'}}>
+                  <Box className= "content" component="span" sx={{height:20, display: 'block'}}>
                     Github id: {githubInfo.id}
                   </Box>
-                  <Box component="span" sx={{height:20, display: 'block'}}>
+                  <Box className= "content" component="span" sx={{height:20, display: 'block'}}>
                     Public Repos: {githubInfo.public_repos}
                   </Box>
-                  <Box component="span" sx={{height:20, display: 'block'}}>
+                  <Box className= "content" component="span" sx={{height:20, display: 'block'}}>
                     Following: {githubInfo.following}
                   </Box>
-                  <Box component="span" sx={{height:20, display: 'block'}}>
+                  <Box className= "content" component="span" sx={{height:20, display: 'block'}}>
                     Followers: {githubInfo.followers}
                   </Box>
-                  <Box component="span" sx={{height:20, display: 'block'}}>
+                  <Box className= "content" component="span" sx={{height:20, display: 'block'}} >
                     Created: {githubInfo.created_at}
                   </Box>
                 </div>
