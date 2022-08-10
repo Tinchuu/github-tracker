@@ -4,10 +4,11 @@ import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import Box from '@mui/material/Box';
+import { GithubData } from './GithubData';
 
 function Search() {
     const [githubName, setGithubName] = useState("");
-    const [githubInfo, setGithubInfo] = useState<undefined | any>(undefined);
+    const [githubInfo, setGithubInfo] = useState<GithubData>();
 
     const GITHUB_BASE_URL = "https://api.github.com";
 
